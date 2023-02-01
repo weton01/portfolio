@@ -12,4 +12,4 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     CommonModule
   ]
 })
-export class CommonModule { }
+export class SharedModule { }
