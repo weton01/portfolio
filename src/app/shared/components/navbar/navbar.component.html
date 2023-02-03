@@ -1,1 +1,24 @@
-<p>navbar works!</p>
+<nav class="navbar" >
+  <c-container>
+    <div class="d-flex align-items-center justify-content-between w-100">
+      <div>
+        <h3>
+          FSTACK
+        </h3>
+      </div>
+      <div>
+      <ng-template [ngIf]="innerWidth < sm">
+        <span class="person-icon">
+          <svg  [cIcon]="icons.cilHamburgerMenu" size="xxl" title="List Icon"></svg>
+        </span>
+      </ng-template>
+      <ng-template [ngIf]="innerWidth >= sm">
+        <ul class="d-flex gap-4">
+          <li class="nav-about-li" *ngFor="let value of navbar">{{ value }}</li>
+        </ul>
+      </ng-template>
+      </div>
+    </div>
+
+  </c-container>
+</nav>
