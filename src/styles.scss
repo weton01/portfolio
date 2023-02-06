@@ -5,6 +5,11 @@
   src: url("/assets/fonts/cyberway-riders-font/cyber.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
 
 * {
   margin: 0px !important;

@@ -16,9 +16,9 @@ export class NavbarComponent {
   public icons = freeSet ;
 
   public navbar: string[] = [
-    'SOBRE',
-    'PROJETOS',
-    'HABILIDADES'
+    'ABOUT',
+    'PROJECTS',
+    'SKILLS'
   ]
 
   ngOnInit() {
