@@ -6,18 +6,23 @@ import { IconModule, IconSetService } from '@coreui/icons-angular';
 import { CardModule, GridModule } from '@coreui/angular';
 import { ExperienceListComponent } from './components/experience-list/experience-list.component';
 import { ButtonComponent } from './components/button/button.component';
+import { InputComponent } from './components/input/input.component';
+import { CardComponent } from './components/card/card.component';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
     ExperienceListComponent,
-    ButtonComponent
+    ButtonComponent,
+    InputComponent,
+    CardComponent
   ],
   exports: [
     NavbarComponent,
     ExperienceListComponent,
-    ButtonComponent
+    ButtonComponent,
+    InputComponent
   ],
   providers: [
     IconSetService
