@@ -1,0 +1,27 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  c-card {
+    border-radius: 4px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe;
+
+    .c-card-image {
+      height: 250px;
+      width: 100%;
+    }
+  }
+
+
+}

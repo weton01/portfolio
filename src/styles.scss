@@ -1,11 +1,113 @@
 @import "../node_modules/@coreui/coreui/scss/coreui";
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-
+@font-face {
+  font-family: Cyberpunk;
+  src: url("/assets/fonts/cyberway-riders-font/cyber.ttf") format("truetype");
+}
 
 
 * {
   margin: 0px !important;
   padding: 0px !important;
   box-sizing: border-box !important;
-   list-style: none;
+  list-style: none;
+
+  .neon-green-bg {
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #32CD32,
+    0 0 0.8rem #32CD32,
+    0 0 2.8rem #32CD32,
+    inset 0 0 1.3rem #32CD32;
+  }
+
+  .neon-purple-bg {
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe;
+  }
+
+  .neon-red-bg {
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #FF0000,
+    0 0 0.8rem #FF0000,
+    0 0 2.8rem #FF0000,
+    inset 0 0 1.3rem #FF0000;
+  }
+
+  .neon-blue-bg {
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #0000FF,
+    0 0 0.8rem #0000FF,
+    0 0 2.8rem #0000FF,
+    inset 0 0 1.3rem #0000FF;
+  }
+
+  .neon-green-txt{
+    text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #32CD32,
+        0 0 45px #32CD32,
+        0 0 55px #32CD32,
+        0 0 70px #32CD32,
+        0 0 80px #32CD32;
+  }
+
+  .neon-purple-bg-txt {
+    text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #bc13fe,
+        0 0 45px #bc13fe,
+        0 0 55px #bc13fe,
+        0 0 70px #bc13fe,
+        0 0 80px #bc13fe;
+  }
+
+  .neon-red-bg-txt {
+    text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #FF0000,
+        0 0 45px #FF0000,
+        0 0 55px #FF0000,
+        0 0 70px #FF0000,
+        0 0 80px #FF0000;
+  }
+
+  .neon-blue-bg-txt {
+    text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #0000FF,
+        0 0 45px #0000FF,
+        0 0 55px #0000FF,
+        0 0 70px #0000FF,
+        0 0 80px #0000FF;
+
+        @keyframes glow {
+          from {
+            text-shadow: 0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 15px #0073e6,
+            0 0 20px #0073e6,
+            0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+          }
+          to {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+          }
+        }
+  }
+
+
 }

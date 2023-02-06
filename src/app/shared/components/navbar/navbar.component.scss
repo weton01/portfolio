@@ -11,9 +11,9 @@
 
   c-container{
 
-     h3 {
-      letter-spacing: 3px;
-      font-family: 'Audiowide', cursive;
+     h2 {
+
+       font-family: 'Cyberpunk';
       -webkit-user-select: none; /* Safari */
       -ms-user-select: none; /* IE 10 and IE 11 */
       user-select: none; /* Standard syntax */
@@ -27,7 +27,9 @@
     .nav-about-li{
       font-size: 13px;
       cursor: pointer;
-    }
+       font-weight: normal;
+       font-family: 'Cyber';
+     }
 
     @media screen and (max-width: 600px) {
       padding: 0px 10px !important;

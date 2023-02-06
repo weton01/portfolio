@@ -4,6 +4,7 @@ import { GridModule } from '@coreui/angular';
 
 import { IndexComponent } from './pages/index/index.component';
 import { HomeRoutingModule } from './home-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { HomeRoutingModule } from './home-routing.module';
   imports: [
     HomeRoutingModule,
     CommonModule,
-    GridModule
+    GridModule,
+    SharedModule
    ]
 })
 export class HomeModule { }

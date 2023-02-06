@@ -10,8 +10,7 @@
 
   .row {
     width: 100% !important;
-    background: #800080;
-    max-width: 100% !important;
+     max-width: 100% !important;
 
   }
 
@@ -82,6 +81,16 @@
       }
 
       .circle span {
+        font-family: 'Cyberpunk';
+        text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #bc13fe,
+        0 0 45px #bc13fe,
+        0 0 55px #bc13fe,
+        0 0 70px #bc13fe,
+        0 0 80px #bc13fe;
         position: absolute;
         top: 0;
         left: 0;
@@ -137,7 +146,8 @@
   }
 
   .purple {
-    background: #040328;
-  }
+   }
+
+
 
 }

@@ -3,15 +3,18 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { IconModule, IconSetService } from '@coreui/icons-angular';
 
-import { GridModule } from '@coreui/angular';
+import { CardModule, GridModule } from '@coreui/angular';
+import { ExperienceListComponent } from './components/experience-list/experience-list.component';
 
 
 @NgModule({
   declarations: [
-    NavbarComponent
+    NavbarComponent,
+    ExperienceListComponent
   ],
   exports: [
-    NavbarComponent
+    NavbarComponent,
+    ExperienceListComponent
   ],
   providers: [
     IconSetService
@@ -19,7 +22,8 @@ import { GridModule } from '@coreui/angular';
   imports: [
     CommonModule,
     GridModule,
-    IconModule
+    IconModule,
+    CardModule
   ]
 })
 export class SharedModule { }
