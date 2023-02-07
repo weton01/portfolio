@@ -1,0 +1,103 @@
+.card-container {
+  --primary-color: yellow ;
+  --size: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  opacity: 0.8;
+  .card {
+    background-color: transparent;
+    margin-bottom: -1.5px !important;
+    margin-left: -1px !important;
+    padding: 0px !important;
+    &__label-container {
+        &:after {
+        position: absolute;
+        bottom: 0px;
+        content: "";
+        display: block;
+        height: var(--size);
+        width: 32px;
+        background: var(--primary-color);
+        right: -29px;
+        -webkit-clip-path: polygon(0 0, calc(100% - 2px) 0%, 100% 100%, 22% 100%);
+        clip-path: polygon(0 0, calc(100% - 2px) 0%, 100% 100%, 0% 100%);
+       }
+    }
+
+    &__label {
+      padding: 0px  !important;
+      padding-right: 15px !important;
+      padding-left: 10px !important;
+      line-height: 4px !important;
+      margin: 0px !important;
+      position: relative;
+      display: block;
+      height: 8px * 2;
+      width: auto;
+      background: var(--primary-color);
+      left: 0px;
+      color: black;
+      font-size: 9px !important;
+      text-transform: uppercase;
+      letter-spacing: 1.25px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 0% 100%);
+    }
+  }
+
+  &__card-content {
+    margin: 0px !important;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: solid var(--size) var(--primary-color);
+    clip-path: polygon(0% 0%,
+        calc(100% - 8px) 0,
+        100% 8px,
+        100% 100%,
+        95% 100%,
+        calc(0% + 8px) 100%,
+        0% calc(100% - 8px),
+        0% calc(100% + 8px));
+
+    &:before,
+    &:after {
+      content: "";
+      height: var(--size);
+      width: 11.5px;
+      background: var(--primary-color);
+      display: block;
+      position: absolute;
+      z-index: 1;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      border-radius: 5px;
+    }
+
+    &:before {
+      right: -4.1px;
+      top: -1px;
+    }
+
+    &:after {
+      left: -4.1px;
+      bottom: -1px;
+    }
+  }
+
+  &__bottom{
+    position: absolute;
+    content: "";
+    display: block;
+    height: var(--size);
+    width: 40%;
+    background: var(--primary-color);
+    right: 0px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, calc(0% + 2px) 100%);
+    bottom: -2.5px;
+  }
+}

@@ -22,7 +22,8 @@ import { CardComponent } from './components/card/card.component';
     NavbarComponent,
     ExperienceListComponent,
     ButtonComponent,
-    InputComponent
+    InputComponent,
+    CardComponent
   ],
   providers: [
     IconSetService
