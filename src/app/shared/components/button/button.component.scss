@@ -4,24 +4,12 @@
   font-display: swap;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  font-family: 'Cyber', sans-serif;
-  background: linear-gradient(90deg, #f5ed00 70%, #e6de00 70%), #fff700;
-}
  .cybr-btn + .cybr-btn {
   margin-top: 2rem;
 }
 
 .cybr-btn {
+  z-index: 100000;
   --primary: #5b29c6 ;
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
   --primary-hue: 10;
@@ -42,7 +30,8 @@ body {
   --clip-five: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
   --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
   --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
-  font-family: 'Cyber', sans-serif;
+  --height: 75px;
+   font-family: 'Cyber', sans-serif;
   color: var(--color);
   cursor: pointer;
   background: transparent;
@@ -55,9 +44,26 @@ body {
   border: 0;
   width: 100%;
   min-width: 200px;
-  height: 75px;
+  height: var(--height);
   line-height: 75px;
   transition: background 0.2s;
+
+  &.primary {
+    --primary: #5b29c6;
+  }
+
+  &.secondary {
+    --primary: red;
+  }
+
+  &.small {
+    --font-size: 16px;
+    --height:  45px;
+    padding: 0px 10px !important;
+    line-height: 25px;
+    min-width: 100%;
+
+  }
 }
 
 .cybr-btn:hover {

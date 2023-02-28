@@ -1,0 +1,43 @@
+.perso-tag {
+  --primary-color:  rgb(13, 242, 242);
+  --size: 35px;
+
+  text-transform: capitalize;
+  font-family: Cyber;
+  font-size: 13px;
+  padding: 12px !important;
+  width: 100%;
+  height: var(--size);
+  background: var(--primary-color);
+  clip-path: polygon(0% 0%,
+  calc(100% - 8px) 0,
+  100% 8px,
+  100% 100%,
+  95% 100%,
+  calc(0% + 8px) 100%,
+  0% calc(100% - 8px),
+  0% calc(100% + 8px));
+  &:before,
+  &:after {
+    content: "";
+    height: var(--size);
+    width: 11.5px;
+    background: var(--primary-color);
+    display: block;
+    position: absolute;
+    z-index: 1;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 5px;
+  }
+
+  &:before {
+    right: -4.1px;
+    top: -1px;
+  }
+
+  &:after {
+    left: -4.1px;
+    bottom: -1px;
+  }
+}

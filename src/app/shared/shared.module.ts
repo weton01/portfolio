@@ -8,6 +8,7 @@ import { ExperienceListComponent } from './components/experience-list/experience
 import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/input/input.component';
 import { CardComponent } from './components/card/card.component';
+import { TagComponent } from './components/tag/tag.component';
 
 
 @NgModule({
@@ -16,14 +17,16 @@ import { CardComponent } from './components/card/card.component';
     ExperienceListComponent,
     ButtonComponent,
     InputComponent,
-    CardComponent
+    CardComponent,
+    TagComponent
   ],
   exports: [
     NavbarComponent,
     ExperienceListComponent,
     ButtonComponent,
     InputComponent,
-    CardComponent
+    CardComponent,
+    TagComponent
   ],
   providers: [
     IconSetService

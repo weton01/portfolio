@@ -1,5 +1,5 @@
 <section>
-  <c-row class="page">
+  <c-row class="page ">
     <c-col>
       <div class="bg-image">
         <div class="bg-image-gradient">
@@ -32,20 +32,77 @@
         </div>
       </div>
       <div class="btn-container">
-        <app-button infoText="h20">LINK START</app-button>
-       </div>
+        <app-button type="primary" infoText="h20">LINK START</app-button>
+      </div>
     </c-col>
   </c-row>
-  <c-row class="page">
-    <c-col >
-      <c-container class="d-flex justify-content-center align-items-center h-100">
-        <app-card title="WELLINGTON">
-          <img src="/assets/images/profile-2.png" alt="profile-2" width="300px" height="200px"/>
-        </app-card>
+  <c-row class="page light">
+    <c-col class="d-flex justify-content-center">
+      <c-container class="d-flex flex-column justify-content-start align-items-center h-100 pt-5 pb-5 gap-3 ">
+        <div class="info">
+          <h1 class="info title">
+            Read About My Life Struggle Story
+          </h1>
+          <p class="info description">
+            My motivations to study
+          </p>
+        </div>
+        <ul class="w-100 d-flex justify-content-center gap-4 flex-wrap">
+          <li *ngFor="let value of myself">
+            <app-card title={{value.title}}>
+              <div class="profile p-3">
+                {{value.description}}
+              </div>
+            </app-card>
+          </li>
+        </ul>
+        <div class="d-flex gap-4 mt-3">
+          <app-button size="small">Download CV</app-button>
+          <app-button size="small" type="secondary">Download CV</app-button>
+        </div>
+        <img  src="assets/images/hr.png" alt="hr" class="m-5"/>
+        <div class="info d-flex flex-column justify-content-center text-center">
+          <h1 class="info title">
+            My Skills
+          </h1>
+          <p class="info description">
+            My motivations to study qw eqw eqe qwe qw asdasda sdasdas das
+          </p>
+        </div>
+        <c-container class="d-flex justify-content-center gap-5 flex-wrap">
+          <img width="400" height="350" src="assets/images/chart.png" alt="chart" />
+          <div  class=" h-100 d-flex align-items-center ">
+            <ul class="tag-list d-flex gap-2 flex-wrap p-2">
+              <li *ngFor="let value of tags">
+                <app-tag>
+                  {{value}}
+                </app-tag>
+              </li>
+            </ul>
+          </div>
+        </c-container>
+        <img  src="assets/images/hr.png" alt="hr" class="m-5"/>
+        <div class="info d-flex flex-column justify-content-center text-center">
+          <h1 class="info title">
+            Projects i worked on
+          </h1>
+          <p class="info description">
+            My motivations to study qw eqw eqe qwe qw asdasda sdasdas das
+          </p>
+        </div>
+        <ul class="w-100 d-flex justify-content-center gap-4 flex-wrap">
+          <li *ngFor="let value of myself">
+            <app-card title={{value.title}}>
+              <div class="profile p-3">
+                {{value.description}}
+              </div>
+            </app-card>
+          </li>
+        </ul>
       </c-container>
     </c-col>
   </c-row>
-  <c-row class="page">
+  <c-row class="page dark">
     <app-experience-list />
   </c-row>
 </section>

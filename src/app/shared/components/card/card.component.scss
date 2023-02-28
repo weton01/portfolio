@@ -1,5 +1,5 @@
 .card-container {
-  --primary-color: yellow ;
+  --primary-color:  rgb(13, 242, 242)  ;
   --size: 4px;
   display: flex;
   flex-direction: column;
@@ -8,10 +8,9 @@
   opacity: 0.8;
   .card {
     background-color: transparent;
-    margin-bottom: -1.5px !important;
-    margin-left: -1px !important;
     padding: 0px !important;
     &__label-container {
+        border: none !important;
         &:after {
         position: absolute;
         bottom: 0px;
@@ -27,6 +26,7 @@
     }
 
     &__label {
+      border: none !important;
       padding: 0px  !important;
       padding-right: 15px !important;
       padding-left: 10px !important;
@@ -38,7 +38,7 @@
       width: auto;
       background: var(--primary-color);
       left: 0px;
-      color: black;
+      color:  #5b29c6;
       font-size: 9px !important;
       text-transform: uppercase;
       letter-spacing: 1.25px;
@@ -50,6 +50,10 @@
   }
 
   &__card-content {
+    min-width: 200px;
+    min-height: 50px;
+    color: white;
+    padding: 5px !important;
     margin: 0px !important;
     width: 100%;
     height: 100%;
@@ -97,7 +101,7 @@
     width: 40%;
     background: var(--primary-color);
     right: 0px;
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, calc(0% + 2px) 100%);
-    bottom: -2.5px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, calc(0% + var(--size)) 100%);
+    bottom: -3.5px;
   }
 }

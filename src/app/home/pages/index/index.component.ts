@@ -7,6 +7,16 @@ export interface Tile {
   text: string;
 }
 
+export interface Myself  {
+  title: string;
+  description: string;
+}
+
+export interface Project{ 
+  image: string,
+  
+}
+
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
@@ -20,4 +30,23 @@ export class IndexComponent {
     {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
   ];
 
+  public myself: Myself[] = [
+    {title: 'past', description: 'I am currently studying new ways of structuring my projects, so, hypothetically, I am able to shorten the creation time and follow a more straight line of the time it takes me to accomplish it.'},
+    {title: 'present', description: 'I am currently studying new ways of structuring my projects, so, hypothetically, I am able to shorten the creation time and follow a more straight line of the time it takes me to accomplish it.'},
+    {title: 'future', description: 'I am currently studying new ways of structuring my projects, so, hypothetically, I am able to shorten the creation time and follow a more straight line of the time it takes me to accomplish it.'},
+  ]
+
+  public tags: string[] = [
+    "Node.js", "Typescript", "React", "Angular", "Terraform",
+    "Node.js", "Typescript", "React", "Angular", "Terraform",
+    "Node.js", "Typescript", "React", "Angular", "Terraform",
+    "Node.js", "Typescript", "React", "Angular", "Terraform",
+    "Node.js", "Typescript", "React", "Angular", "Terraform",
+    "Node.js", "Typescript", "React", "Angular", "Terraform",
+    "Node.js", "Typescript", "React", "Angular", "Terraform",
+    "Node.js", "Typescript", "React", "Angular", "Terraform",
+    "Node.js", "Typescript", "React", "Angular", "Terraform",
+  ]
+
+  public projects: 
 }
